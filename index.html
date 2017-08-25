@@ -78,6 +78,42 @@
 	</section>
 
 	<section class="slide">
+		<h2>Типы данных</h2>
+		<pre><code class="javascript">
+typeof 1; // 'number'
+typeof 'string'; // 'string'
+typeof true; // 'boolean'
+typeof {}; // 'object'
+typeof function() {}; // 'function'
+		</code></pre>
+	</section>
+
+	<section class="slide">
+		<h2>&laquo;Специальные&raquo; типы данных</h2>
+		<pre><code class="javascript">
+typeof undefined; // 'undefined'
+typeof null; // <mark>'object'</mark>
+		</code></pre>
+	</section>
+
+	<section class="slide">
+		<h2>null и undefined</h2>
+		<p><code>null</code> &mdash; специальное значение для указания того, что в переменной лежит &laquo;ничего&raquo;</p>
+		<p><code>undefined</code> &mdash; такое значение принимает переменная в момент объявления.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Работа с null</h2>
+		<p>При сравнении на <code>==</code>, <code>null</code> равен только себе и ничему другому.
+			В остальных сравнениях он считаеся числом 0</p>
+		<pre><code class="javascript">
+null == false; // false
+null >= false; // true
+null > false; // false
+		</code></pre>
+	</section>
+
+	<section class="slide">
 		<h2 class="shout">Строки</h2>
 	</section>
 
