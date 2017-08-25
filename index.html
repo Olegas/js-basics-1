@@ -354,6 +354,17 @@ d.setDate(27); // 27.03.2017
 	</section>
 
 	<section class="slide">
+		<h2>Сложение и вычитание дат</h2>
+		<p>Сперва дата преобразовать к числу &mdash; к числу миллисекунд с Linux epoch. Далее выполнить операцию.
+			Можно получить разницу между двумя датами или их сумму в виде числа. Но это очень неудобно =(</p>
+		<pre><code class="javascript">
+var date1 = +new Date(2017, 1, 1, 10, 0, 0, 0);
+var date2 = +new Date(2017, 1, 1, 11, 0, 0, 0);
+var msDiff = date2-date1;
+		</code></pre>
+	</section>
+
+	<section class="slide">
 		<h2 class="shout">Ассоциативные массивые</h2>
 	</section>
 
